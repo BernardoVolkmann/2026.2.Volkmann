@@ -1,0 +1,58 @@
+% ----------------------------------------------------------
+\chapter{Introdução} \label{cap:Introducao}
+% ----------------------------------------------------------
+
+O crescimento da Internet e da interconexão de dispositivos digitais tem ampliado significativamente a necessidade de mecanismos robustos de segurança da informação \cite{paula2020segurancca}. Em ambientes modernos, que abrangem desde sistemas corporativos até dispositivos embarcados e aplicações de Internet das Coisas (IoT), a proteção de dados tornou-se um requisito fundamental para garantir confidencialidade, integridade e autenticidade das comunicações \cite{adil2021hash}. Nesse contexto, a criptografia desempenha papel central como mecanismo técnico capaz de reduzir ameaças associadas à interceptação, modificação e falsificação de informações transmitidas em redes públicas e privadas \cite{limniotis2021cryptography}.
+
+De acordo com \cite{correia2025criptografia}, a criptografia constitui um dos pilares fundamentais da segurança da informação, sendo amplamente utilizada para proteger dados sensíveis em sistemas distribuídos e redes de comunicação. Nesse sentido, diferentes algoritmos criptográficos apresentam comportamentos distintos quanto ao desempenho, consumo de recursos computacionais e nível de segurança, tornando necessária a análise do contexto de aplicação para a escolha da técnica mais adequada. De forma semelhante, estudos sobre criptografia moderna indicam que a seleção de algoritmos deve considerar as características do sistema e os requisitos específicos da aplicação, uma vez que não existe um algoritmo universalmente superior para todos os cenários de uso \cite{ludwig2020estado}. 
+
+Entre os algoritmos mais utilizados atualmente, destacam-se aqueles de chave simétrica, como o AES (Advanced Encryption Standard), e aqueles de chave assimétrica, como RSA (Rivest-Shamir-Adleman) e ECC (Elliptic Curve Cryptography). A principal diferença entre essas abordagens reside no uso das chaves: enquanto os algoritmos simétricos utilizam uma única chave compartilhada para os processos de criptografia e descriptografia, os algoritmos assimétricos empregam um par de chaves distintas, sendo uma pública e outra privada. Em termos de desempenho, algoritmos simétricos geralmente apresentam maior eficiência e menor custo computacional, sendo mais adequados para o processamento de grandes volumes de dados. Por outro lado, algoritmos assimétricos, embora mais custosos computacionalmente, são amplamente empregados em processos de autenticação, assinatura digital e estabelecimento seguro de chaves \cite{shaikh2024comparative}. 
+
+Algoritmos modernos de fluxo, como o ChaCha20, têm sido utilizados como alternativas eficientes ao AES em ambientes onde não há suporte a aceleração criptográfica por hardware. Nesse sentido, \cite{almeida2025revisao} ressalta que a escolha do algoritmo criptográfico deve considerar não apenas o nível de segurança oferecido, mas também fatores como desempenho, consumo de recursos e características da plataforma em que será implementado.
+
+No contexto de dispositivos embarcados e aplicações de IoT, surgem desafios adicionais relacionados às limitações de memória, capacidade de processamento e consumo energético \cite{pereira2020challenges}. A IoT consiste em um paradigma tecnológico que conecta objetos físicos com capacidade computacional e comunicação em rede, permitindo que dispositivos interajam e compartilhem informações de forma automática \cite{pauferro2020iot}. 
+
+Em dispositivos inteligentes no contexto da IoT, é comum a presença de limitações de processamento e armazenamento, o que dificulta a aplicação direta de mecanismos de segurança tradicionalmente utilizados em sistemas computacionais convencionais \cite{pauferro2020iot}. Dessa forma, a escolha inadequada de algoritmos criptográficos pode impactar diretamente o desempenho do sistema e aumentar o consumo energético, comprometendo a eficiência e a escalabilidade da aplicação \cite{khan2025comprehensive}. 
+
+Nesse cenário, surgem abordagens voltadas à chamada criptografia leve (\textit{lightweight cryptography}), cujo objetivo é garantir segurança adequada mesmo em dispositivos com restrições de recursos computacionais. Essas soluções priorizam algoritmos que demandem menor capacidade de processamento, menor uso de memória e menor consumo energético, possibilitando sua aplicação em sensores, dispositivos móveis e sistemas embarcados utilizados em ambientes IoT \cite{dhanda2020lightweight}. 
+
+Diante desse cenário, torna-se relevante investigar não apenas o nível de segurança oferecido pelos algoritmos criptográficos, mas também seu impacto no desempenho da transmissão de mensagens em barramentos CAN (\textit{Controller Area Network}). A análise da latência de criptografia, da geração de chaves e do throughput possibilita compreender como diferentes abordagens, simétricas e assimétricas, se comportam sob restrições de tempo real e recursos computacionais.
+
+Nesse contexto, estabelece-se a seguinte questão de pesquisa: quais são as diferenças de latência e de custo computacional observadas na execução dos mecanismos criptográficos AES-128-CTR, ChaCha20, RSA-2048-OAEP e ECIES-P256 sobre dados representativos de mensagens CAN, considerando suas distintas funções criptográficas e as características dos ambientes experimentais utilizados?
+
+A investigação dessa questão concentra-se na mensuração do processamento criptográfico em um computador e em uma plataforma embarcada ESP32, sem abranger a latência total de transmissão de mensagens cifradas pelo barramento CAN. A comparação considera a cifragem simétrica por mensagem e, separadamente, os custos das operações assimétricas e híbridas implementadas.
+
+
+\subsection{Objetivo Geral}\label{subsec:objetivosgerais}
+% ----------------------------------------------------------
+
+\subsubsection{Objetivo Geral}
+
+Analisar comparativamente o desempenho computacional dos mecanismos criptográficos AES-128-CTR, ChaCha20, RSA-2048-OAEP e ECIES-P256 no processamento de mensagens de barramento CAN, considerando suas diferenças funcionais e os custos de execução em ambientes experimentais controlados.
+
+% ----------------------------------------------------------
+\subsection{Objetivos Específicos}
+% ----------------------------------------------------------
+\begin{itemize}    
+    \item Implementar os mecanismos criptográficos AES-128-CTR, ChaCha20, RSA-2048-OAEP e ECIES-P256 para processamento experimental de mensagens CAN;
+    
+    \item Mensurar a latência das operações criptográficas, considerando também throughput, consumo de memória RAM e tempo de geração de chaves, quando aplicável;
+
+    \item Avaliar a latência das implementações em uma plataforma embarcada ESP32, utilizando medições internas e instrumentação com osciloscópio;
+    
+    \item Comparar os resultados obtidos nos ambientes experimentais, identificando as limitações e possibilidades de aplicação dos mecanismos em sistemas embarcados relacionados ao barramento CAN.
+
+\end{itemize}
+
+% ----------------------------------------------------------
+\subsubsection{Limitação do Escopo}
+
+Este trabalho tem como foco a análise comparativa do desempenho computacional de mecanismos criptográficos aplicados ao processamento de mensagens de barramento CAN. A pesquisa concentra-se na avaliação de AES-128-CTR, ChaCha20, RSA-2048-OAEP e ECIES-P256, considerando principalmente a latência de processamento, além de métricas complementares como throughput, consumo de memória RAM e tempo de geração de chaves, quando aplicável.
+
+A análise é realizada em ambientes experimentais controlados, utilizando um computador e uma plataforma embarcada ESP32. Os experimentos concentram-se na execução das operações criptográficas, não abrangendo a medição da latência total de transmissão de mensagens protegidas em uma rede CAN automotiva real.
+
+Além disso, o estudo não tem como objetivo desenvolver novos algoritmos criptográficos ou modificar os mecanismos existentes, mas caracterizar seus custos computacionais e suas diferenças operacionais. Também não contempla a implementação de sistemas completos de detecção de intrusão, protocolos automotivos de segurança ou arquiteturas integradas de proteção veicular.
+
+Por fim, a pesquisa limita-se à avaliação experimental de desempenho, não incluindo a análise aprofundada da resistência dos mecanismos a ataques específicos. Os resultados devem, portanto, ser interpretados considerando as características das implementações, dos ambientes utilizados e das operações efetivamente medidas.
+
+

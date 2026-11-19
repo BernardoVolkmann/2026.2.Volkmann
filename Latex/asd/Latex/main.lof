@@ -1,0 +1,28 @@
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Entendimento do Barramento CAN}}{12}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Estrutura do CAN}}{14}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Comparação de CAN Clássico com CAN FD}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Entendimento da Criptografia em Barramento CAN}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Entendimento da Criptografia Simétrica}}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de uma Cifra de Bloco}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Fluxograma do ChaCha20}}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Entendimento da Criptografia Assimétrica}}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Ataque de \textit {Spoofing} em Barramento CAN}}{34}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Ataque de \textit {Replay} em Barramento CAN}}{35}{figure.caption.16}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Ataque de Injeção de Mensagens em Barramento CAN}}{36}{figure.caption.17}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Ataque de Negação de Serviço em Barramento CAN}}{37}{figure.caption.18}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Avaliação do Desempenho dos Algoritmos Criptográficos}}{38}{figure.caption.19}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Entendimento sobre a Biblioteca OpenSSL}}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Benchmark e as Métricas para serem Avaliadas}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Workflow da Metodologia do Trabalho}}{49}{figure.caption.22}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Fluxo de processamento do benchmark criptográfico com mensagens CAN}}{64}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Fluxograma do procedimento experimental de medição de latência no ESP32}}{65}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Latência média de cifragem e desvio padrão no computador. O detalhe interno amplia apenas AES-128-CTR e ChaCha20; os pontos de ECIES-P256 e RSA-2048-OAEP permanecem na escala principal. Fonte: dados do benchmark.}}{69}{figure.caption.27}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Throughput médio e desvio padrão no computador. O detalhe interno amplia apenas os valores de ECIES-P256 e RSA-2048-OAEP. Fonte: dados do benchmark.}}{70}{figure.caption.29}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Memória RAM média observada e desvio padrão no computador. O eixo vertical está recortado para facilitar a leitura das médias próximas; os valores absolutos constam da tabela. Fonte: dados do benchmark.}}{71}{figure.caption.31}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Tempo médio de geração ou preparação de chaves e desvio padrão no computador, em escala logarítmica. Fonte: dados do benchmark.}}{72}{figure.caption.33}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Registro do osciloscópio associado à execução de AES-128-CTR.}}{73}{figure.caption.34}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Registro do osciloscópio associado à execução de ChaCha20.}}{74}{figure.caption.35}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Registro experimental associado à execução de RSA-2048-OAEP.}}{75}{figure.caption.36}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Registro experimental associado à execução de ECIES-P256.}}{76}{figure.caption.37}%

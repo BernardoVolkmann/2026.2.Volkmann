@@ -1,0 +1,14 @@
+% Resumo em português
+\setlength{\absparsep}{18pt}
+\begin{resumo}
+    \SingleSpacing
+
+    O aumento da conectividade em veículos modernos ampliou a importância da segurança das comunicações realizadas por meio do barramento Controller Area Network (CAN). Embora amplamente utilizado na indústria automotiva devido à sua confiabilidade e ao baixo custo de implementação, o protocolo CAN não possui mecanismos nativos de proteção da confidencialidade e da integridade das informações transmitidas. Nesse contexto, a utilização de mecanismos criptográficos representa uma alternativa para ampliar a proteção das mensagens trocadas entre as unidades de controle eletrônico dos veículos.
+
+    Este trabalho tem como objetivo analisar comparativamente o desempenho computacional dos mecanismos criptográficos AES-128-CTR, ChaCha20, RSA-2048-OAEP e ECIES-P256 no processamento de mensagens de barramento CAN, considerando suas diferenças funcionais e os custos de execução. Para isso, foi desenvolvido um ambiente experimental em linguagem C, utilizando a biblioteca OpenSSL em um computador com sistema operacional Windows, além de uma implementação em plataforma embarcada ESP32. A avaliação considera principalmente a latência de processamento, complementada por métricas de throughput, consumo de memória RAM e tempo de geração de chaves, quando aplicável. Os experimentos no computador utilizaram datasets públicos contendo mensagens CAN reais, enquanto os testes no ESP32 empregaram entradas de tamanho fixo. As medições foram realizadas em condições controladas, sem incluir a transmissão física de mensagens criptografadas pelo barramento CAN.
+
+    A análise busca identificar diferenças de desempenho entre os mecanismos avaliados, considerando as particularidades das operações simétricas, assimétricas e híbridas. Dessa forma, o estudo contribui para a compreensão dos custos computacionais associados à utilização de criptografia em sistemas relacionados ao barramento CAN, fornecendo subsídios para a avaliação de mecanismos de proteção em aplicações automotivas.
+
+    \vspace{\onelineskip}
+    \noindent\textbf{Palavras-chave}: Barramento CAN. Criptografia. AES-128-CTR. ChaCha20. RSA-2048-OAEP. ECIES-P256. Segurança automotiva.
+\end{resumo}

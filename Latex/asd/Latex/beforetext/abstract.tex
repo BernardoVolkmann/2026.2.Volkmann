@@ -1,0 +1,16 @@
+% Abstract in English
+\begin{resumo}[Abstract]
+    \SingleSpacing
+    \begin{otherlanguage*}{english}
+
+        The increasing connectivity of modern vehicles has highlighted the importance of securing communications performed through the Controller Area Network (CAN) bus. Although widely adopted in the automotive industry due to its reliability and low implementation cost, the CAN protocol does not provide native mechanisms to protect the confidentiality and integrity of transmitted information. In this context, cryptographic mechanisms represent an alternative for enhancing the protection of messages exchanged between Electronic Control Units (ECUs).
+
+        This study aims to comparatively analyze the computational performance of AES-128-CTR, ChaCha20, RSA-2048-OAEP, and ECIES-P256 when processing CAN bus messages, considering their different cryptographic functions and execution costs. To achieve this objective, an experimental environment was developed in the C programming language using the OpenSSL library on a Windows-based computer, alongside an implementation on an ESP32 embedded platform. The evaluation primarily focuses on processing latency, complemented by throughput, RAM consumption, and key generation time, when applicable. The computer-based experiments used public datasets containing real CAN messages, whereas the ESP32 tests employed fixed-size inputs. Measurements were performed under controlled conditions without including the physical transmission of encrypted messages over the CAN bus.
+
+        The analysis seeks to identify performance differences among the evaluated mechanisms while considering the characteristics of symmetric, asymmetric, and hybrid cryptographic operations. Therefore, this study contributes to understanding the computational costs associated with cryptography in CAN-related systems and provides evidence to support the evaluation of security mechanisms for automotive applications.
+
+        \vspace{\onelineskip}
+        \noindent\textbf{Keywords}: CAN Bus. Cryptography. AES-128-CTR. ChaCha20. RSA-2048-OAEP. ECIES-P256. Automotive Security.
+
+    \end{otherlanguage*}
+\end{resumo}
